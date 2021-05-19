@@ -1,0 +1,27 @@
+
+--
+-- Table structure for table `emp`
+--
+
+CREATE TABLE IF NOT EXISTS `emp` (
+  `eno` varchar(15) NOT NULL,
+  `ename` text NOT NULL,
+  `address` text NOT NULL,
+  `city` text NOT NULL,
+  `contact` text NOT NULL,
+  `desg` text NOT NULL,
+  `secretq` text NOT NULL,
+  `ans` text NOT NULL,
+  `passwd` text NOT NULL,
+  PRIMARY KEY (`eno`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `emp`
+--
+
+INSERT INTO `emp` (`eno`, `ename`, `address`, `city`, `contact`, `desg`, `secretq`, `ans`, `passwd`) VALUES
+('101', 'Pooja', 'Kothrud', 'Pune', '9890123123', 'Operator', 'City Of Birth', 'Pune', 'pooja777'),
+('102', 'Rahul', 'Viman Nagar', 'Pune', '9890111222', 'Operator', 'how many floors does your office have?', 'six', 'rahul123');
+
+-- --------------------------------------------------------
